@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+
+    <script>
+        var operador
+        var num1
+        var num2
+
+        while(operador != "+" && operador != "-" && operador != "*" && operador != "/"){
+        operador = window.prompt('Digite a operação escolhida: + , - , * , /')
+        }
+
+        while(isNaN(num1)){
+        num1 = window.prompt('Digite um número:')
+        }
+
+        while(isNaN(num2)){
+        num2 = window.prompt('Digite outro número:')
+        }
+    
+        num1 = Number(num1)
+        num2 = Number(num2)
+
+        function soma(a,b){
+            return a+b
+        }
+
+        function subtracao(a,b){
+            return a-b
+        }
+
+        function multiplicacao(a,b){
+            return num1*num2
+        }
+
+        function divisao(a,b){
+            return a/b
+        }
+
+        if(operador=='+'){
+            result = soma(num1,num2)
+            document.write(result)
+        }
+
+        if(operador=='-'){
+            result = subtracao(num1,num2)
+            document.write(result)
+        }
+
+        if(operador=='*'){
+            result = multiplicacao(num1,num2)
+            document.write(result)
+        }
+
+        if(operador=='/'){
+            result = divisao(num1,num2)
+            document.write(result)
+        }
+        
+    </script>
+    
+</body>
+</html>
