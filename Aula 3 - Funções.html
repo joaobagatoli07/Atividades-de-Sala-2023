@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+
+    <script>
+        var num1 = 20, num2 = 3;
+
+        function multiplica(){
+            document.write("Dentro da função multiplica: ")
+            return num1*num2;
+        }
+
+        function soma (a,b){
+            document.write("Dentro da função soma: ")
+            return a+b
+
+        }
+
+        result = multiplica()
+        document.write(result + "<br>")
+
+        result = soma(2,3)
+        document.write(result + "<br>")
+
+        var subtracao = function (a,b){
+            document.write("Dentro da função subtração: ")
+            return a-b;
+        }
+
+        result = subtracao(3,2)
+        document.write(result)
+            
+    </script>
+
+</body>
+</html>
