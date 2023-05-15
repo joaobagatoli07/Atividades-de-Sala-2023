@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="one">Olá Mundo!</p>
+    <p class="two">Tudo bem?</p>
+
+    <script>
+        // documentElement;
+        // getElementById;
+        // getElementsByTagName;
+
+        // var p = document.getElementsByTagName('p')[1]
+        // p.innerHTML = "texto"
+
+        // var p = document.getElementById('one')
+        // p.innerHTML = p.innerHTML + 'texto'
+
+        // var p = document.getElementsByClassName('two')[0]
+        // p.innerHTML = 'texto'
+        
+        // var p = document.querySelector('.two')
+        // p.innerHTML = 'texto'
+        
+        // var p = document.getElementsByTagName('p')[0]
+
+        // for(var i=0; i<10; i++){
+        //     p.innerHTML = p.innerHTML + 'texto <br>'
+        // }
+    </script>
+
+    <!-- <button id="clique">Clique aqui!</button> -->
+
+    <!-- <button id="clique" onclick="funclique()">Clique aqui</button> -->
+
+    <button id="clique" onclick="funclique()">Clique aqui</button>
+    <div onmouseout="mudarcor(this, 'red')" onmouseenter="mudarcor(this, 'blue')"></div>
+
+    <script>
+
+        // var button = document.getElementById('clique')
+
+        // button.addEventListener('click', function(){
+        //     document.write("Reconhecido o clique.")
+        // })
+
+        // function funclique(){
+        //     document.write("Reconhecido o clique")
+        // }
+
+        function funclique(){
+            document.write("Reconhecido o clique")
+        }
+
+        function mudarcor(elemento,cor){
+            elemento.style.backgroundColor = cor
+            elemento.innerHTML = "mudou de cor"
+        }
+    </script>
+
+</body>
+</html>
