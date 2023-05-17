@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+    <style>
+        .conteudo h2 span{
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .conteudo p{
+            height: 10px;
+            overflow: hidden;
+        }
+
+        .mostrar{
+            height: 200px !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="conteudo">
+        <h2>Título do conteúdo <span>ver mais!</span></h2>
+
+        <p>
+            JavaScript é uma linguagem de programação que adiciona interatividade ao seu site. 
+            Isso acontece em jogos, no comportamento das respostas quando botões são pressionados ou com entrada de dados em formulários; 
+            com estilo dinâmico; com animação, etc. Este artigo ajuda você a começar a usar o JavaScript e aumenta sua compreensão do que é possível.
+            JavaScript é uma poderosa linguagem de programação que pode adicionar interatividade a um site. Foi inventado por Brendan Eich.
+            JavaScript é versátil e amigável para iniciantes. Com mais experiência, você poderá criar jogos, gráficos 2D e 3D animados, 
+            aplicativos abrangentes baseados em banco de dados e muito mais!
+        </p>
+
+    </div>
+
+    <script>
+        var span = document.querySelector('.conteudo span')
+
+        span.addEventListener('click', function(){
+            var conteudo = document.querySelector('.conteudo p')
+
+            if (conteudo.classList.contains('mostrar')){
+                span.innerHTML = 'Ver mais!'
+                conteudo.classList.remove('mostrar')
+
+            }else{
+                span.innerHTML = 'ocultar'
+                conteudo.classList.add('mostrar')
+            }
+        })
+    </script>
+    
+
+</body>
+</html>
